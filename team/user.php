@@ -28,7 +28,9 @@
                     <label>名前：<input type="text" name="name"></label><br>
                     <label>email：<input type="text" name="email"></label><br>
                     <label>ログインID：<input type="text" name="lid"></label><br>
-                    <label>ログインPASSWORD：<input type="text" name="lpw"></label><br>
+                    <label>ログインPASSWORD：<input type="password" name="lpw"></label><br>
+                    <label><input type="hidden" name="kanli_flg"></label><br>
+                    <label><input type="hidden" name="life_flg"></label><br>
                     <input type="submit" value="登録">
                 </fieldset>
             </div>
