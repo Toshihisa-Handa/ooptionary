@@ -1,0 +1,106 @@
+body {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100%;
+  padding: 60px 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 1.6;
+  color: #444;
+  letter-spacing: 0.04em;
+  background-color: #f5f5fb;
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  -ms-flex-align: center;
+}
+
+.form-content {
+  width: 100%;
+  max-width: 430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.form-login {
+  margin: 0 0 50px;
+}
+
+.form-login .checkbox {
+  font-weight: 400;
+}
+
+.form-login .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-login .form-control:focus {
+  z-index: 2;
+}
+
+.form-login input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-login input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* original */
+.login-title {
+  margin: 0 0 26px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.login-title--ja {
+  margin: 0 0 14px;
+}
+
+.login-title--en {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #1e90ff;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin: 0 0 24px;
+}
+
+.form-label {
+  font-size: 14px;
+}
+
+.title-border {
+  display: flex;
+  align-items: center;
+  margin: 0 0 26px;
+}
+
+.title-border:before,
+.title-border:after {
+  flex-grow: 1;
+  height: 1px;
+  content: "";
+  background-color: #666;
+}
+
+.title-border:before {
+  margin-right: 1rem;
+}
+
+.title-border:after {
+  margin-left: 1rem;
+}

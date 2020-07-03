@@ -106,7 +106,7 @@ hr {
   border-top: 1px solid #ccc;
 }
 
-button,
+btn,
 input,
 select,
 textarea {
@@ -139,10 +139,10 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #333;
+  color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "palt";
@@ -188,7 +188,14 @@ Header
 }
 
 .header-logo__link {
+  font-size: 2rem;
+  font-weight: 700;
   color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.is-scroll .header-logo__link {
+  color: #1e90ff;
 }
 
 .gnav__list {
@@ -245,11 +252,75 @@ Header
 }
 
 /* --------------------------------------------------
-Main
+Common
 -------------------------------------------------- */
 .main {
   display: block;
 }
+
+.l-inner {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  padding: 8px 35px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: #1e90ff;
+  border: 2px solid #1e90ff;
+  border-radius: 30px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  color: #1e90ff;
+  background-color: #fff;
+}
+
+.btn__arrow {
+  margin: 0 0 0 10px;
+}
+
+.index-sec__lead {
+  margin: 0 0 50px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2;
+  color: #7a7a7a;
+  text-align: center;
+}
+
+.index-sec__title {
+  margin: 0 0 30px;
+  text-align: center;
+  letter-spacing: 0.4em;
+}
+
+.index-sec__title--ja {
+  margin: 0 0 22px;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.index-sec__title--en {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e90ff;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------
+Content
+-------------------------------------------------- */
 
 .mv {
   position: relative;
@@ -300,48 +371,6 @@ Main
   line-height: 2;
 }
 
-.button {
-  display: inline-block;
-  width: 200px;
-  padding: 8px 35px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  background-color: #1e90ff;
-  border: 2px solid #1e90ff;
-  border-radius: 30px;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.button:hover {
-  color: #1e90ff;
-  background-color: #fff;
-}
-
-.l-inner {
-  max-width: 1140px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-.index-sec__lead {
-  margin: 0 0 50px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 2;
-  color: #7a7a7a;
-  text-align: center;
-}
-
-.index-sec__title {
-  margin: 0 0 30px;
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
 /* intro */
 .intro {
   padding: 70px 0 74px;
@@ -358,22 +387,22 @@ Main
 
 .intro-list__item {
   width: 31.333%;
-}
-
-.intro-list__body {
-  position: relative;
-  z-index: 1;
   padding: 30px 25px 50px;
   text-align: center;
   background: #f0f4f9;
   border-radius: 10px;
 }
 
+.intro-list__icon {
+  margin: 0 0 20px;
+  font-size: 5rem;
+  color: #1e90ff;
+}
+
 .intro-list__title {
   margin: 0 0 20px;
   font-size: 2rem;
   font-weight: 700;
-  color: #1e90ff;
 }
 
 .intro-list__text {
@@ -421,6 +450,7 @@ Main
   font-size: 3rem;
   font-weight: 500;
   line-height: 1;
+  color: #1e90ff;
   letter-spacing: 0.125em;
 }
 
@@ -453,11 +483,19 @@ Main
   background-color: #00c4ff;
 }
 
-.index-sec__text {
+.cta-content__title {
+  margin: 0 0 30px;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.cta-content__text {
   margin: 0 0 32px;
 }
 
-.cta__btn {
+.cta-content__btn {
   display: inline-block;
   min-width: 200px;
   padding: 0px 16px;
@@ -471,7 +509,7 @@ Main
   transition: color 0.3s, background-color 0.3s;
 }
 
-.cta__btn:hover {
+.cta-content__btn:hover {
   color: #434653;
   background-color: #fff;
 }
@@ -481,12 +519,9 @@ Footer
 -------------------------------------------------- */
 .footer {
   padding: 40px 0;
-  color: #fff;
-  background-color: #434653;
 }
 
 .copyright {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
