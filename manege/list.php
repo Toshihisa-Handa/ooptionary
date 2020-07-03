@@ -24,6 +24,8 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
 </header>
 <!-- Head[End] -->
 <p><a href="logout.php">ログアウト</a></p>
+<p><a href="adminMenu.php">管理者TOPへ</a></p>
+
 <!-- Main[Start] -->
 <form method="post" action="insert.php">
   <div class="jumbotron">

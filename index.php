@@ -18,7 +18,7 @@
                 <ul class="gnav__list">
                     <li class="gnav__item"><a href="#link1" class="gnav__link">特徴</a></li>
                     <li class="gnav__item"><a href="#link2" class="gnav__link">使い方</a></li>
-                    <li class="gnav__item"><a href="login.html" class="gnav__link">ログイン</a></li>
+                    <li class="gnav__item"><a href="team/login.php" class="gnav__link">ログイン</a></li>
                     <li class="gnav__item"><a href="" class="gnav__btn">質問をみる<i class="fas fa-caret-right btn__arrow"></i></a></li>
                 </ul>
             </nav>

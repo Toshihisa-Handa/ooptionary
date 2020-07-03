@@ -1,0 +1,62 @@
+/* 共通 */
+.container{
+  width:1250px;
+  margin:0 auto;
+  display:flex;
+}
+.left-container{
+  width:900px;
+}
+.right-container{
+  width:300px;
+  margin-left:50px;
+}
+.fas{
+  font-size:30px;
+}
+/* マイページヘッダー */
+.profiele-area{
+  background-color:rgb(161, 204, 216);
+  padding:20px;
+}
+.profiele-box{
+  width:50%;
+}
+h1{
+  color:blue;
+}
+
+.profiele-area{
+  display:flex;
+  justify-content: space-between;
+
+}
+.nav-box{
+  width:50%;
+  display:flex;
+  justify-content: space-between;
+}
+
+/* 投稿エリア */
+.push-log{
+  margin-top:50px;
+}
+.push-log-area{
+  border:solid 1px rgb(138, 148, 151);
+  margin:0;
+  border-bottom:1px transparent solid;
+  margin-bottom:-1px;
+  border-bottom:none;
+}
+.push-log-area:last-child{
+  border-bottom:solid 1px rgb(138, 148, 151);
+}
+.log-title p{
+  padding:20px 20px 10px 20px;
+}
+
+.icons{
+  display:flex;
+  justify-content: space-around;
+
+}

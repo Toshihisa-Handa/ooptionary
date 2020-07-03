@@ -29,7 +29,7 @@ if($status==false){
   sql_error();
 
 }else{
-  redirect("user.php");
+  redirect("login.php");
 }
 
 ?>
