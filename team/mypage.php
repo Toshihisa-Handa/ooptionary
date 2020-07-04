@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/mypage.css">
+  <link rel="stylesheet" href="../css/header.css">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<!-- font awsome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-</head>
 
-<body>
-  
-<a href="login.php">ログイン画面へ</a>
+
+<!-- ヘッダーのincludeをheadタグの一番下に入れる -->
+<?php include('header.php') ?>
+
 
 <div class="container">
 
@@ -139,15 +138,28 @@
           </div>
       </div>
 
+  <!-- フッター -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer-area">
 
-
-
-
-
-
-
-
+              <form method="post" action="oopsInsert.php">
+                  <label><textArea name="naiyou" class='text' placeholder='Your Oops!'></textArea></label><br>
+         
+                  
+                    <input type="submit" value="送信">
+                  </div>
+               </form>
+            
+          </div>
+        </div>
       </div>
+
+
+
+
+
+
 
       <!-- 右側のエリア -->
       <div class="right-area">
