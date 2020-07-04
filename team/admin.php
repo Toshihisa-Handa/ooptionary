@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新規登録 | うぷしょなりー</title>
+    <title>管理者ログイン | うぷしょなりー</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
@@ -18,10 +18,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="login.php">ログイン画面</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="../team/admin.php">管理者画面</a>
                         </li>
                         <li class="nav-item">
@@ -35,26 +35,18 @@
     <div class="form-content">
         <form class="form-login" method="POST" action="u_insert.php">
             <div class="login-title">
-                <h1 class="h2 login-title--ja">ユーザー登録</h1>
-                <span class="login-title--en">SINE UP</span>
+                <h1 class="h2 login-title--ja">管理画面ログイン</h1>
+                <span class="login-title--en">ADMIN</span>
             </div>
             <div class="form-group">
-                <label for="inputName" class="form-label">名前</label>
+                <label for="inputName" class="form-label">ログイン名</label>
                 <input type="text" name="name" id="inputName" class="form-control" placeholder="山田 太郎" required>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail" class="form-label">メールアドレス</label>
-                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="test@test.com" required>
-            </div>
-            <div class="form-group">
-                <label for="inputId" class="form-label">ログインID</label>
-                <input type="text" name="lid" id="inputId" class="form-control" placeholder="1234" required>
             </div>
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
                 <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password" required>
             </div>
-            <input type="hidden" name="kanli_flg" value="1">
+            <input type="hidden" name="kanli_flg" value="0">
             <input type="hidden" name="life_flg" value="0">
             <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">登録する</button>
             <small class="d-block text-muted text-center">&copy; 2020 Oopsionary.</small>

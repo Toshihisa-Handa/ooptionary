@@ -11,6 +11,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.l-inner{
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .form-content {
   -ms-flex-align: center;
   display: -ms-flexbox;
@@ -76,6 +82,7 @@ body {
 
 .form-group {
   margin: 0 0 24px;
+  position: relative;
 }
 
 .form-label {
