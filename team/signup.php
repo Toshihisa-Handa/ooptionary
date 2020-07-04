@@ -28,26 +28,30 @@
         </nav>
     </header>
     <div class="form-content">
-        <form class="form-login" method='POST' action="login_act.php">
+        <form class="form-login" method="POST" action="u_insert.php">
             <div class="login-title">
-                <h1 class="h2 login-title--ja">うぷしょなりー</h1>
-                <span class="login-title--en">Login</span>
+                <h1 class="h2 login-title--ja">ユーザー登録</h1>
+                <span class="login-title--en">SINE UP</span>
+            </div>
+            <div class="form-group">
+                <label for="inputName" class="form-label">名前</label>
+                <input type="text" name="name" id="inputName" class="form-control" placeholder="山田 太郎" required>
             </div>
             <div class="form-group">
                 <label for="inputEmail" class="form-label">メールアドレス</label>
-                <input type="email" name='email' id="inputEmail" class="form-control" placeholder="test@test.com" required autofocus>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="test@test.com" required>
+            </div>
+            <div class="form-group">
+                <label for="inputId" class="form-label">ログインID</label>
+                <input type="text" name="lid" id="inputId" class="form-control" placeholder="1234" required>
             </div>
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
-                <input type="password" name='lpw' id="inputPassword" class="form-control" placeholder="password" required>
+                <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password" required>
             </div>
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="remember-me" id="rememberCheck">
-                <label class="form-check-label form-label" for="rememberCheck">ログイン状態を保持</label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">ログイン</button>
-            <div class="title-border">アカウントを持っていない方</div>
-            <a class="btn btn-lg btn-outline-primary btn-block mb-5" href="signup.php" role="button">新規登録</a>
+            <input type="hidden" name="kanli_flg">
+            <input type="hidden" name="life_flg">
+            <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">新規登録</button>
             <small class="d-block text-muted text-center">&copy; 2020 Oopsionary.</small>
         </form>
     </div>

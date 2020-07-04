@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/top_style.css">
+    <link rel="stylesheet" href="css/toppage.css">
 </head>
 <body>
     <header class="header">
         <div class="header__inner">
-            <h1 class="header-logo"><a href="index.html" class="header-logo__link">うぷしょなりー</a></h1>
+            <h1 class="header-logo"><a href="index.php" class="header-logo__link">うぷしょなりー</a></h1>
             <nav class="gnav">
                 <ul class="gnav__list">
                     <li class="gnav__item"><a href="#link1" class="gnav__link">特徴</a></li>
@@ -110,7 +110,7 @@
             <div class="cta-content">
                 <h2 class="cta-content__title">さっそく始めよう</h2>
                 <p class="cta-content__text">１分後、プログラミングの世界でお会いしましょう。</p>
-                <a class="cta-content__btn" href="list/index.html">詳しく見る<i class="fas fa-caret-right btn__arrow"></i></a>
+                <a class="cta-content__btn" href="list/index.php">詳しく見る<i class="fas fa-caret-right btn__arrow"></i></a>
             </div>
         </section>
     </main>
