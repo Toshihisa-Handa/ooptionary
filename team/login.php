@@ -35,7 +35,7 @@
         </form>
 
         <form class="form-login" method="POST" action="u_insert.php">
-            <div class="title-border">アカウントを持っていない方a</div>
+            <div class="title-border">アカウントを持っていない方</div>
             <button class="btn btn-lg btn-outline-primary btn-block" type="submit">新規登録</button>
             <div class="jumbotron">
                 <fieldset>
@@ -44,8 +44,8 @@
                     <label>email：<input type="text" name="email"></label><br>
                     <label>ログインID：<input type="text" name="lid"></label><br>
                     <label>ログインPASSWORD：<input type="password" name="lpw"></label><br>
-                    <label><input type="hidden" name="kanli_flg"></label><br>
-                    <label><input type="hidden" name="life_flg"></label><br>
+                    <label><input type="hidden" name="kanli_flg" value="1"></label><br></label><br>
+                    <label><input type="hidden" name="life_flg"value="0"></label><br></label><br>
                     <input type="submit" value="登録">
                 </fieldset>
             </div>        

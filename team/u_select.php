@@ -1,14 +1,14 @@
 <!-- 登録情報の一覧 -->
 
 <?php
-//0. SESSION開始！！
-session_start();
+// //0. SESSION開始！！
+// session_start();
 
 //１．関数群の読み込み
 include("funcs.php");
 
-//LOGINチェック → funcs.phpへ関数化しましょう！
-sschk();
+// //LOGINチェック → funcs.phpへ関数化しましょう！
+// sschk();
 
 //２．データ登録SQL作成
 $pdo = db_conn();
@@ -26,7 +26,7 @@ if($status==false) {
     $view .= $r["id"]."|".$r["name"]."|".$r["lid"]."|".$r["lpw"];
     $view .= '</a>';
 
-    if($_SESSION["kanri_flg"]=="1"){
+    if($_SESSION["kanri_flg"]=="0"){
         $view .= "　";
         $view .= '<a href="u_delete.php?id='.$r["id"].'">';
         $view .= "[削除]";

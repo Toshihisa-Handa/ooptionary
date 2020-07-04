@@ -1,0 +1,26 @@
+.profile {
+    
+    display: flex;
+    justify-content: left;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #000000;
+}
+
+.profile img {
+    width: 5%;
+    height: auto;
+}
+
+.profile p {
+    line-height: 10px;
+    vertical-align: middle; 
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+
