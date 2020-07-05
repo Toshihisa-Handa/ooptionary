@@ -23,8 +23,8 @@ sschk();
 <body>
   <p>管理者TOP画面</p>
   <a href="viewall.php">投稿一覧画面へ</a>
-  <a href="../team/login.php">ログイン画面へ</a>
-  <a href="../team/logout.php">ログアウト</a>
+  <a href="../user/login.php">ログイン画面へ</a>
+  <a href="../user/logout_act.php">ログアウト</a>
 
   <div class="jumbotron">
 

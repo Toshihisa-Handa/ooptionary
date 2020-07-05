@@ -22,7 +22,7 @@
                             <a class="nav-link" href="login.php">ログイン画面</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../team/admin.php">管理者画面</a>
+                            <a class="nav-link" href="../user/admin.php">管理者画面</a>
                         </li>
                     </ul>
                 </div>
@@ -30,7 +30,7 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form-login" method="POST" action="u_insert.php">
+        <form class="form-login" method="POST" action="user_act.php">
             <div class="login-title">
                 <h1 class="h2 login-title--ja">ユーザー登録</h1>
                 <span class="login-title--en">SINE UP</span>

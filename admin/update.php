@@ -56,7 +56,7 @@ $row = $stmt->fetch();
   </nav>
 </header>
 <!-- Head[End] -->
-<p><a href="../team/logout.php">ログアウト</a></p>
+<p><a href="../user/logout_act.php">ログアウト</a></p>
 
 <!-- Main[Start] -->
 <form method="post" action="update_act.php">

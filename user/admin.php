@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ログイン | うぷしょなりー</title>
+    <title>管理者ログイン | うぷしょなりー</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
@@ -19,11 +18,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="login.php">ログイン画面</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../team/admin.php">管理者画面</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../user/admin.php">管理者画面</a>
                         </li>
                     </ul>
                 </div>
@@ -33,27 +32,27 @@
     <div class="form-content">
         <form class="form-login" method="POST" action="login_act.php">
             <div class="login-title">
-                <h1 class="h2 login-title--ja">ログイン画面</h1>
-                <span class="login-title--en">Login</span>
+                <h1 class="h2 login-title--ja">管理画面ログイン</h1>
+                <span class="login-title--en">ADMIN</span>
             </div>
             <div class="form-group">
-                <label for="inputEmail" class="form-label">メールアドレス</label>
-                <input type="email" name="email" autocomplete="off" id="inputEmail" class="form-control" placeholder="test@test.com" required autofocus>
+                <label for="inputName" class="form-label">ログイン名</label>
+                <input type="text" name="name" autocomplete="off" id="inputName" class="form-control" placeholder="山田 太郎" required>
             </div>
+            <input type="hidden" name="email"  value="kanli@kanli.jp">
+            <input type="hidden" name="lid"  value="管理者">
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
-                <input type="password" name="lpw" autocomplete="off" id="inputPassword" class="form-control" placeholder="password" autocomplete="off" required>
+                <input type="password" name="lpw" autocomplete="off" id="inputPassword" class="form-control" placeholder="password" required>
             </div>
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="remember-me" id="rememberCheck">
-                <label class="form-check-label form-label" for="rememberCheck">ログイン状態を保持</label>
-            </div>
+            <input type="hidden" name="kanli_flg" value="0">
+            <input type="hidden" name="life_flg" value="0">
             <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">ログイン</button>
-            <div class="title-border">アカウントを持っていない方</div>
-            <a class="btn btn-lg btn-outline-primary btn-block mb-5" href="signup.php" role="button">新規登録</a>
             <small class="d-block text-muted text-center">&copy; 2020 Oopsionary.</small>
         </form>
     </div>
+  
+ 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
 </body>

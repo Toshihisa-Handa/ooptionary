@@ -110,7 +110,7 @@ if ($status==false) {
                    
                     <h3>投稿一覧</h3>
                         <a href="list.php">登録へ戻る</a>
-                        <p><a href="logout.php">ログアウト</a></p>
+                        <p><a href="logout_act.php">ログアウト</a></p>
 
                         <p><?=$view?></p>
 
@@ -189,7 +189,7 @@ if ($status==false) {
           </div>
           <h3>投稿一覧</h3>
           <a href="list.php">登録へ戻る</a>
-          <p><a href="logout.php">ログアウト</a></p>
+          <p><a href="logout_act.php">ログアウト</a></p>
 
           <p><?=$view?>
           </p>

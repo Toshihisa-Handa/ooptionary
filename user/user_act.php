@@ -38,7 +38,7 @@ if($status==false){
   sql_error();
 
 }else{
-  redirect("content.php");
+  redirect("list.php");
 }
 
 ?>

@@ -56,7 +56,7 @@ if($status==false){
 <body>
   <h1>投稿一覧</h1>
   <a href="list.php">登録へ戻る</a>
-  <p><a href="../team/logout.php">ログアウト</a></p>
+  <p><a href="../user/logout_act.php">ログアウト</a></p>
 
  <p><?=$view?></p>
 </body>

@@ -3,7 +3,6 @@ session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
 // sschk();
 
-echo $_SESSION["name"];
 ?>
 
 
@@ -13,13 +12,15 @@ echo $_SESSION["name"];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-<?php include('header.php') ?>
+  <?php include('l-header-css.php') ?>
+</head>
 <body>
+<?php include('l-header.php') ?>
 <?php echo $_SESSION["name"];
 $name= $_SESSION["name"]; 
 ?>
 
-<form method="post" action="myOopsInsert.php">
+<form method="post" action="post_act.php">
   <div>
    <fieldset>
     <legend>YourOoops!</legend>
