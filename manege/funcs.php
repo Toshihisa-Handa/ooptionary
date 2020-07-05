@@ -24,16 +24,14 @@ function db_conn(){
 //3.セッションリジェネレイト処理を全てのページで行うため、関数化し記述を簡略化する(Login認証)
 
 //手打ち入力でログイン後のページにログインせずに行ってもエラーになるようにしている） 
-function loginCheck(){
-    if( !isset($_SESSION['chk_ssid']) || $_SESSION['chk_ssid']!=session_id()){
-      echo 'Login Error!';
-      exit();
-    }
-    else{//elseの記述は元のコードではなく新規記述
-      session_regenerate_id(true);
-      $_SESSION['chk_ssid'] = session_id();
-      // echo $_SESSION['chk_ssid'];
-    }
+//SessionCheck
+function sschk(){
+  if(!isset($_SESSION["chk_ssid"]) || $_SESSION["chk_ssid"]!=session_id()){
+    exit("Login Error");
+ }else{
+    session_regenerate_id(true); //SESSION_IDを毎ページ変える
+    $_SESSION["chk_ssid"] = session_id();
+ }
 }
 
 ?>

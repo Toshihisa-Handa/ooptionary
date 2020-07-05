@@ -1,5 +1,7 @@
 <?php
-
+session_start();
+include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
+sschk();
 
 
 ?>
@@ -22,6 +24,7 @@
   <p>管理者TOP画面</p>
   <a href="list.php">投稿一覧画面へ</a>
   <a href="../team/login.php">ログイン画面へ</a>
+  <a href="../team/logout.php">ログアウト</a>
 
   <div class="jumbotron">
 
@@ -37,7 +40,7 @@
         <div class="card-body">
         <h5 class="card-title">強制記事  削除機能 </h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="select.php" class="btn btn-primary">Go somewhere</a>
       </div>
     </div><div class="card" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->

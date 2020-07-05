@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
-// loginCheck();
+sschk();
 
 
 //1. DB接続します
@@ -58,7 +58,7 @@ if($status==false){
 <body>
   <h1>投稿一覧</h1>
   <a href="list.php">登録へ戻る</a>
-  <p><a href="logout.php">ログアウト</a></p>
+  <p><a href="../team/logout.php">ログアウト</a></p>
 
  <p><?=$view?></p>
 </body>

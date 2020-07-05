@@ -2,7 +2,7 @@
 <?php
 session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
-// loginCheck();
+sschk();
 
 
 //1.GETでidを取得
@@ -56,7 +56,7 @@ $row = $stmt->fetch();
   </nav>
 </header>
 <!-- Head[End] -->
-<p><a href="logout.php">ログアウト</a></p>
+<p><a href="../team/logout.php">ログアウト</a></p>
 
 <!-- Main[Start] -->
 <form method="post" action="update.php">
