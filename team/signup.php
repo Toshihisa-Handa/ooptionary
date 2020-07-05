@@ -48,11 +48,11 @@
             </div>
             <div class="form-group">
                 <label for="inputId" class="form-label">ログインID</label>
-                <input type="text" name="lid" id="inputId" class="form-control" placeholder="1234" required>
+                <input type="text" name="lid" id="inputId" class="form-control" placeholder="アカウント名" required>
             </div>
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
-                <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password" required>
+                <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password（例 : 123)" required>
             </div>
             <input type="hidden" name="kanli_flg" value="1">
             <input type="hidden" name="life_flg" value="0">

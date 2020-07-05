@@ -42,6 +42,8 @@
                 <label for="inputName" class="form-label">ログイン名</label>
                 <input type="text" name="name" id="inputName" class="form-control" placeholder="山田 太郎" required>
             </div>
+            <input type="hidden" name="email" value="kanli@kanli.jp">
+            <input type="hidden" name="lid" value="管理者">
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
                 <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password" required>
