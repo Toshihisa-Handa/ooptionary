@@ -3,16 +3,16 @@ session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
 // sschk();
 
-
+// $name = $_SESSION["name"];
 //1. DB接続します
 $pdo = db_conn();
-
+// $id = $_SESSION["chk_ssid"];
 
 
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
-$stmt = $pdo->prepare("SELECT* FROM user_oops_table WHERE id=:id ");
-$stmt->bindValue(':id',$_SESSION["chk_ssid"], PDO::PARAM_INT);
+$stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name="のり"');
+// $stmt->bindValue(':name',$_SESSION["name"], PDO::PARAM_INT);
 $status = $stmt->execute();
 
 
@@ -54,7 +54,6 @@ if ($status==false) {
   <title>Document</title>
   <link rel="stylesheet" href="../css/mypage.css">
   <link rel="stylesheet" href="../css/header.css">
-<<<<<<< HEAD
   <?php include('l-header-css.php') ?>
 </head>
 <body>
@@ -63,21 +62,6 @@ if ($status==false) {
   <div class="container">
     <!-- 左側のエリア -->
     <div class="left-ara">
-=======
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
-<!-- ヘッダーのincludeをheadタグの一番下に入れる -->
-<?php include('header.php') ?>
-
-<?php echo $_SESSION["name"]; ?>
-<div class="container">
-
-      <!-- 左側のエリア -->
-      <div class="left-ara">
->>>>>>> kkk
       <!-- マイページヘッダー -->
       <div class="profiele">
         <div class="left-container">
@@ -122,6 +106,16 @@ if ($status==false) {
             </div>
             <div class="log-img">
             </div>
+            
+                   
+                    <h3>投稿一覧</h3>
+                        <a href="list.php">登録へ戻る</a>
+                        <p><a href="logout.php">ログアウト</a></p>
+
+                        <p><?=$view?></p>
+
+
+                  <!-- 記事の投稿ここまで -->
           </div>
           <div class="push-log-area">
             <div class="log-title">
@@ -205,20 +199,6 @@ if ($status==false) {
         </div>
       </div>
 
-      <!-- フッター -->
-      <div class="footer">
-        <div class="container">
-          <div class="footer-area">
-
-            <form method="post" action="oopsInsert.php">
-              <label><textArea name="naiyou" class='text' placeholder='Your Oops!'></textArea></label><br>
-
-
-              <input type="submit" value="送信">
-          </div>
-          </form>
-
-        </div>
       </div>
     </div>
 

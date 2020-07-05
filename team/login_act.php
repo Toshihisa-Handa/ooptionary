@@ -42,7 +42,7 @@ if ($val["id"] != "") {
     redirect("../manege/adminMenu.php");
 } else {
     //Login失敗時(Logout経由)
-    redirect("login_false.php");
+    redirect("error.php");
 }
 
 exit();
@@ -75,7 +75,7 @@ if ($val["id"] != "") {
     redirect("mypage.php");
 } else {
     //Login失敗時(Logout経由)
-    redirect("login_false.php");
+    redirect("error.php");
 }
 
 exit();

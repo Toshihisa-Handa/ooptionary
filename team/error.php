@@ -13,7 +13,7 @@
         <div class="notfound__content">
             <h1 class="error__title">ログインが確認出来ませんでした</h1>
             <div class="notfound__text">下記ボタンよりお戻りください。</div>
-            <a class="btn btn-primary btn-lg mr-3" href="" role="button">一覧ページへ</a>
+            <a class="btn btn-primary btn-lg mr-3" href="login.php" role="button">一覧ページへ</a>
             <a class="btn btn-secondary btn-lg" href="../index.php" role="button">トップへ戻る</a>
         </div>
     </div>
