@@ -1,11 +1,6 @@
 <?php 
-include('funcs.php')
+include('funcs.php');
 
-
-?>
-
-
-<?php
 //1. POSTデータ取得
 //$name = filter_input( INPUT_GET, ","name" ); //こういうのもあるよ
 //$title = filter_input( INPUT_POST, "title" ); //こういうのもあるよ

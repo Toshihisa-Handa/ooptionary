@@ -19,11 +19,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../team/admin.php">管理者画面</a>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="login.php">ログイン画面</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.php">トップページ</a>
+                            <a class="nav-link" href="../team/admin.php">管理者画面</a>
                         </li>
                     </ul>
                 </div>

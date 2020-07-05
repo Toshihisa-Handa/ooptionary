@@ -12,7 +12,7 @@ sschk();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/adminmenu.css">
+  <link rel="stylesheet" href="../css/menutop.css">
 
 
 <!-- Bootstrap -->
@@ -22,7 +22,7 @@ sschk();
 </head>
 <body>
   <p>管理者TOP画面</p>
-  <a href="list.php">投稿一覧画面へ</a>
+  <a href="viewall.php">投稿一覧画面へ</a>
   <a href="../team/login.php">ログイン画面へ</a>
   <a href="../team/logout.php">ログアウト</a>
 
@@ -34,13 +34,13 @@ sschk();
   <hr class="my-4">
   <p>管理機能一覧</p>
 
-  <div class="card-box">
+  <div class="d-flex card-box">
       <div class="card" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
         <h5 class="card-title">強制記事  削除機能 </h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="select.php" class="btn btn-primary">Go somewhere</a>
+        <a href="viewall.php" class="btn btn-primary">Go somewhere</a>
       </div>
     </div><div class="card" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->

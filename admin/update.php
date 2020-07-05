@@ -51,7 +51,7 @@ $row = $stmt->fetch();
 <header>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-    <div class="navbar-header"><a class="navbar-brand" href="select.php">投稿更新</a></div>
+    <div class="navbar-header"><a class="navbar-brand" href="viewall.php">投稿更新</a></div>
     </div>
   </nav>
 </header>
@@ -59,7 +59,7 @@ $row = $stmt->fetch();
 <p><a href="../team/logout.php">ログアウト</a></p>
 
 <!-- Main[Start] -->
-<form method="post" action="update.php">
+<form method="post" action="update_act.php">
   <div class="jumbotron">
    <fieldset>
     <legend>Your Ooops</legend>

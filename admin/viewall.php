@@ -27,14 +27,12 @@ if($status==false){
  while( $r = $stmt->fetch(PDO::FETCH_ASSOC)){
   //  $view.='<p>'.$r['id'].$r['name'].$r['author'].$r['kan'].$r['kansou'].$r['indate'].'</p>';
 
-  //更新用リンクを埋め込んだ表示コード(元のselect.phpから修正する箇所)
   $view .='<p>';
-  // $view .='<a href="u_view.php? id='.$r["id"].'">';
   $view .=$r["indate"].":".$r["name"].":".$r["title"].'<br>'.$r["naiyou"];
   // $view .='</a>';
 //以下はupdateのリンクタグの記述
   $view .='  ';
-  $view .='<a href="u_view.php? id='.$r["id"].'">';
+  $view .='<a href="update.php? id='.$r["id"].'">';
   $view .='[更新]';
   $view .='</a>';
 //以下はdeleteのリンクタグの記述

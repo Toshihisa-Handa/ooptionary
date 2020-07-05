@@ -48,9 +48,8 @@ if($status==false){
   exit("SQLError:".$error[2]);//エラーが起きたらエラーの2番目の配列から取ります。ここは考えず、これを使えばOK
                              // SQLEErrorの部分はエラー時出てくる文なのでなんでもOK
 }else{//この項目以下の遷移先のみ変更↓
-  //５．select2.phpへリダイレクト(エラーがなければindex.phpt)
-  header('Location: select.php');//Location:の後ろの半角スペースは必ず入れる。
+  //５．viewall.phpへリダイレクト(エラーがなければindex.phpt)
+  header('Location: viewall.php');//Location:の後ろの半角スペースは必ず入れる。
   exit;
-//このupdate.phpが表示されるのはエラーの時のみ。更新が順調に完了した場合select2.phpへ移動する
 }
 ?>

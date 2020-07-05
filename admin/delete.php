@@ -6,7 +6,6 @@ include('funcs.php')
 
 
 <?php
-//記述のベースはupdate.phpをコピペで作成
 
 
 //1. POSTデータ取得
@@ -43,7 +42,7 @@ if($status==false){
                              // SQLEErrorの部分はエラー時出てくる文なのでなんでもOK
 }else{//この項目以下の遷移先のみ変更↓
   //５．select2.phpへリダイレクト(エラーがなければindex.phpt)
-  header('Location: select.php');//Location:の後ろの半角スペースは必ず入れる。
+  header('Location: viewall.php');//Location:の後ろの半角スペースは必ず入れる。
   exit;
 //このdelete.phpが表示されるのはエラーの時のみ。更新が順調に完了した場合select2.phpへ移動する
 }

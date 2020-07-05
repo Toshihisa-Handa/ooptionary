@@ -39,7 +39,7 @@ if ($val["id"] != "") {
     $_SESSION["chk_ssid"]  = session_id(); //この認証が通ったときのKEYを渡しておく
     $_SESSION["kanri_flg"] = $val['kanri_flg'];
     $_SESSION["name"]      = $val['name'];
-    redirect("../manege/adminMenu.php");
+    redirect("../admin/menutop.php");
 } else {
     //Login失敗時(Logout経由)
     redirect("error.php");

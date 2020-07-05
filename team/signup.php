@@ -24,9 +24,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../team/admin.php">管理者画面</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.php">トップページ</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
