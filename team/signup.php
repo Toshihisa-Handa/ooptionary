@@ -40,19 +40,19 @@
             </div>
             <div class="form-group">
                 <label for="inputName" class="form-label">名前</label>
-                <input type="text" name="name" id="inputName" class="form-control" placeholder="山田 太郎" required>
+                <input type="text" name="name"autocomplete="off"  id="inputName" class="form-control" placeholder="山田 太郎" required>
             </div>
             <div class="form-group">
                 <label for="inputEmail" class="form-label">メールアドレス</label>
-                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="test@test.com" required>
+                <input type="email" name="email" autocomplete="off" id="inputEmail" class="form-control" placeholder="test@test.com" required>
             </div>
             <div class="form-group">
-                <label for="inputId" class="form-label">ログインID</label>
-                <input type="text" name="lid" id="inputId" class="form-control" placeholder="アカウント名" required>
+                <label for="inputId" class="form-label">アカウント名</label>
+                <input type="text" name="lid" autocomplete="off" id="inputId" class="form-control" placeholder="kirikko" required>
             </div>
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
-                <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password（例 : 123)" required>
+                <input type="password" autocomplete="off" name="lpw" id="inputPassword" class="form-control" placeholder="123" required>
             </div>
             <input type="hidden" name="kanli_flg" value="1">
             <input type="hidden" name="life_flg" value="0">

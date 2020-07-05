@@ -11,7 +11,8 @@ $pdo = db_conn();
 
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
-$stmt = $pdo->prepare("SELECT* FROM user_oops_table ");
+$stmt = $pdo->prepare("SELECT* FROM user_oops_table WHERE id=:id ");
+$stmt->bindValue(':id',$_SESSION["chk_ssid"], PDO::PARAM_INT);
 $status = $stmt->execute();
 
 
@@ -63,7 +64,7 @@ if($status==false){
 <!-- ヘッダーのincludeをheadタグの一番下に入れる -->
 <?php include('header.php') ?>
 
-
+<?php echo $_SESSION["name"]; ?>
 <div class="container">
 
       <!-- 左側のエリア -->

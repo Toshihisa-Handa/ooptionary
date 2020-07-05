@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
-// loginCheck();
+sschk();
 ?>
 
 
@@ -23,7 +23,7 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
   </nav>
 </header>
 <!-- Head[End] -->
-<p><a href="logout.php">ログアウト</a></p>
+<p><a href="../team/logout.php">ログアウト</a></p>
 <p><a href="adminmenu.php">管理者TOPへ</a></p>
 
 <!-- Main[Start] -->

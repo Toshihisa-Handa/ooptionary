@@ -38,11 +38,11 @@
             </div>
             <div class="form-group">
                 <label for="inputEmail" class="form-label">メールアドレス</label>
-                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="test@test.com" required autofocus>
+                <input type="email" name="email" autocomplete="off" id="inputEmail" class="form-control" placeholder="test@test.com" required autofocus>
             </div>
             <div class="form-group">
                 <label for="inputPassword" class="form-label">パスワード</label>
-                <input type="password" name="lpw" id="inputPassword" class="form-control" placeholder="password" autocomplete="off" required>
+                <input type="password" name="lpw" autocomplete="off" id="inputPassword" class="form-control" placeholder="password" autocomplete="off" required>
             </div>
             <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" value="remember-me" id="rememberCheck">
