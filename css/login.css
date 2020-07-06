@@ -153,6 +153,7 @@ li {
   top: 0;
   height: 50px;
   position: fixed;
+  top:0;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #dedede;
