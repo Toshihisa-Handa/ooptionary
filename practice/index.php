@@ -14,9 +14,19 @@
 
 <h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル</h5>
     <form method="POST" action="insert.php">
-        <input class="form-control form-control-lg" id="editor" type="text" name="title" placeholder="タイトルを入力">
 
         <div class="w-30 p-1 border solid rounded" style="background-color: #FFFFEE;">◆記事本文</div>
+            <textarea id="editor" name="title" rows="8" cols="40">
+            </textarea>
+            
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+              <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+              <script>
+                  var simplemde = new SimpleMDE({ 
+                      element: document.getElementById("editor"),
+                      forceSync: true
+                  });
+              </script>
             <textarea id="editor2" name="naiyou" rows="8" cols="40">
             </textarea>
             

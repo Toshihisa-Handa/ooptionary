@@ -34,12 +34,14 @@ if ($status==false) {
         <h5 class="card-title">';
         $view.=$r['title'].'</h5>
         <div class="card-text list_text content">';
-        $view.= nl2br($r['naiyou']).'</div>
-      <a href="#" class="btn btn-primary">詳細を見る</a>
-      <a href="delete.php" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>
-      <a href="#" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>
-      </div>
-      </div>';
+        $view.= nl2br($r['naiyou']).'</div>';
+
+      $view.='<a href="#" class="btn btn-primary">詳細を見る</a>';
+      $view.='<a href="delete.php" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>';
+      // $view.= '<a href="delete.php? id='.$r["id"].'"></a>';
+      // $view.= '<a href="#" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>';
+      $view .='<a href="detail2.php? id='.$r["id"].'" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>';
+      $view.='</div></div>';
     }
 }
 
@@ -61,20 +63,15 @@ if ($status==false) {
   <div class="container">
   <?php echo $_SESSION["name"];
  ?>
-    <?=$view?> <div class="content">aa</div>
+    <?=$view?>
   </div><!-- 末尾の閉じタグ -->
   <?php @include('l-footer.php') ?>
   <script src="js/marked.js"></script>
-  <!-- <script>
-    document.querySelector('.content').innerHTML =
-      marked('<?=$r["naiyou"]?>');
-  </script> -->
-  <script>
+
+
+<script>
     document.querySelectorAll('.content').innerHTML =
       marked('<?=$r["naiyou"]?>');
-
-   
-
-  </script>
+</script>
 </body>
 </html>
