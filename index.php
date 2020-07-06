@@ -19,7 +19,7 @@
                     <li class="gnav__item"><a href="#link1" class="gnav__link">特徴</a></li>
                     <li class="gnav__item"><a href="#link2" class="gnav__link">使い方</a></li>
                     <li class="gnav__item"><a href="user/login.php" class="gnav__link">ログイン</a></li>
-                    <li class="gnav__item"><a href="" class="gnav__btn">質問をみる<i class="fas fa-caret-right btn__arrow"></i></a></li>
+                    <li class="gnav__item"><a href="user/list.php" class="gnav__btn">質問をみる<i class="fas fa-caret-right btn__arrow"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,7 @@
                         <div class="mv-copy__text">３行ぐらいのテキストでお願いします。<br>
                             この文章はダミーです。文字の大きさ、<br>
                             量、字間、行間等を確認するために入れています。</div>
-                        <a href="" class="btn">質問を見る<i class="fas fa-caret-right btn__arrow"></i></a>
+                        <a href="user/list.php" class="btn">質問を見る<i class="fas fa-caret-right btn__arrow"></i></a>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
             <div class="cta-content">
                 <h2 class="cta-content__title">さっそく始めよう</h2>
                 <p class="cta-content__text">１分後、プログラミングの世界でお会いしましょう。</p>
-                <a class="cta-content__btn" href="list/index.php">詳しく見る<i class="fas fa-caret-right btn__arrow"></i></a>
+                <a class="cta-content__btn" href="user/list.php">質問を見る<i class="fas fa-caret-right btn__arrow"></i></a>
             </div>
         </section>
     </main>

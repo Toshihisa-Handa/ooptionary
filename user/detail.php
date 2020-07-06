@@ -1,6 +1,6 @@
 <?php
 // session_start();
-$id = 35; //?id~**を受け取る
+$id = 41; //?id~**を受け取る
 include("funcs.php");
 // sschk();
 $pdo = db_conn();
