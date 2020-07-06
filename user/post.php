@@ -34,6 +34,7 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
       <input type="file" class="form-control-file" id="exampleFormControlFile1">
       <input type="submit" value="送信" class="btn btn-primary">
     </form>
+<<<<<<< Updated upstream
   </div>
   <?php @include('l-footer.php') ?>
   <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
@@ -43,5 +44,12 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
       forceSync: true
     });
   </script>
+=======
+
+
+
+<?php @include('l-footer.php') ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
