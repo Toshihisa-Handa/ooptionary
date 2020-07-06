@@ -12,7 +12,7 @@ $name = $_SESSION["name"];
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
 $stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name=:id');
-$stmt->bindValue(':id',$id, PDO::PARAM_INT);
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
 
@@ -63,79 +63,44 @@ if ($status==false) {
     <!-- 左側のエリア -->
     <div class="left-ara">
       <!-- マイページヘッダー -->
-    <a href="logout.php">ログアウト</a>
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
-         <p>test</p> 
+      <a href="logout.php">ログアウト</a>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
 
 
     </div>
 
 
-
-
-
-
-
     <!-- 右側のエリア -->
     <div class="right-area">
-
-      <!-- カレンダーエリア -->
-      <div class="calendar">
-        <div class="right-container">
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-          <p>ここにカレンダーなど</p>
-        </div>
-      </div>
+      <div class="monthly" id="mycalendar"></div>
     </div>
     <!-- 右側のエリアここまで -->
   </div>

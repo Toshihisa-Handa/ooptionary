@@ -12,7 +12,7 @@ $pdo = db_conn();
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
 $stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name=:name');
-$stmt->bindValue(':name',$_SESSION["name"], PDO::PARAM_INT);
+$stmt->bindValue(':name', $_SESSION["name"], PDO::PARAM_INT);
 $status = $stmt->execute();
 
 
@@ -26,23 +26,24 @@ if ($status==false) {
 } else {
     //selectデータの数だけ自動でループしてくれる
     while ($r = $stmt->fetch(PDO::FETCH_ASSOC)) {
-     $view.='<div class="card list_card">
-     <h5 class="card-header"> 
-       <div class="sumnail">
+        $view.= '<div class="card list_card">
+        <h5 class="card-header"> 
+        <div class="sumnail">
         <i class="fas fa-user-circle"></i>';
-     $view.=$r["name"].'</div> </h5>
-     <div class="card-body">
-       <h5 class="card-title">';
-      $view.=$r["title"].'</h5> <p id="content" class="card-text list_text content">';
-      $view.=$r["naiyou"].'</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+        $view.= $r['name'].'</div></h5>
+        <div class="card-body">
+        <h5 class="card-title">';
+        $view.=$r['title'].'</h5>
+        <div class="card-text list_text content">';
+        $view.= nl2br($r['naiyou']).'</div>
+      <a href="#" class="btn btn-primary">詳細を見る</a>
       <i class="fas fa-trash-alt"></i>
       <i class="fas fa-redo-alt"></i>
-    </div></div>';
+      </div>
+      </div>';
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,24 +55,19 @@ if ($status==false) {
   <link rel="stylesheet" href="../css/list.css">
 </head>
 <body>
-<?php include('l-header.php') ?>
-
-<div class="container">
-<?=$view?>
-
-
-<!-- 末尾の閉じタグ -->
-</div>
-<?php @include('l-footer.php') ?>
-<script src="js/marked.js"></script>
-<script>
-      document.getElementById('content').innerHTML =
-
-    // document.querySelector('.content').innerHTML =
-      marked("<?=$r["naiyou"]?>");
+  <?php include('l-header.php') ?>
+  <div class="container">
+    <?=$view?>
+  </div><!-- 末尾の閉じタグ -->
+  <?php @include('l-footer.php') ?>
+  <script src="js/marked.js"></script>
+  <!-- <script>
+    document.querySelector('.content').innerHTML =
+      marked('<?=$r["naiyou"]?>');
+  </script> -->
+  <script>
+    document.querySelectorAll('.content').innerHTML =
+      marked('<?=$r["naiyou"]?>');
   </script>
 </body>
 </html>
-
-
-
