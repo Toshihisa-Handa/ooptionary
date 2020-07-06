@@ -1,28 +1,19 @@
-<?php 
-session_start();
-include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
-// sschk();
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <?php include('l-header-css.php') ?>
-</head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<?php include('header.php') ?>
 <body>
-<?php include('l-header.php') ?>
-<?php echo $_SESSION["name"];
-$name= $_SESSION["name"]; 
-?>
 
 <h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル</h5>
-    <form method="POST" action="post_act.php">
-        <input type="hidden" name="name" value="<?php echo $name?>">
+    <form method="POST" action="insert.php">
         <input class="form-control form-control-lg" id="editor" type="text" name="title" placeholder="タイトルを入力">
 
         <div class="w-30 p-1 border solid rounded" style="background-color: #FFFFEE;">◆記事本文</div>
@@ -41,25 +32,10 @@ $name= $_SESSION["name"];
 
         <input type="submit" value="送信">
     </form>
-
-
-
-
-
-<!-- <form method="post" action="post_act.php">
-  <div>
-   <fieldset>
-    <legend>YourOoops!</legend>
-     <label>名前：<input type="text" name="name" value="<?php echo $name?>"></label><br>
-     <label>タイトル<input type="text" name="title"></label><br>
-     <p>内容</p>
-     <label><textArea name="naiyou" rows="4" cols="40"></textArea></label><br>
-     <input type="submit" value="送信">
-    </fieldset>
-  </div>
-</form> -->
-
-<?php @include('l-footer.php') ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>
