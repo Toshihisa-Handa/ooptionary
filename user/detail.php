@@ -1,12 +1,12 @@
 <?php
 // session_start();
-$id = 3; //?id~**を受け取る
+$id = 35; //?id~**を受け取る
 include("funcs.php");
 // sschk();
 $pdo = db_conn();
 
 //２．データ登録SQL作成
-$stmt = $pdo->prepare("SELECT * FROM test WHERE id=:id");
+$stmt = $pdo->prepare("SELECT * FROM user_oops_table WHERE id=:id");
 $stmt->bindValue(":id",$id,PDO::PARAM_INT);
 $status = $stmt->execute();
 
@@ -16,7 +16,6 @@ if($status==false) {
 }else{
     $row = $stmt->fetch();
 }
-echo $row["naiyou"];
 ?>
 
 <!doctype html>
@@ -28,6 +27,7 @@ echo $row["naiyou"];
 </head>
 <body>
   <div id="content"></div>
+  <!-- タイトルはこの辺りに入れる -->
   <script>
     document.getElementById('content').innerHTML =
       marked("<?=$row["naiyou"]?>");

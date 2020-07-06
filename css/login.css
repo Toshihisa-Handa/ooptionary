@@ -157,6 +157,7 @@ li {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #dedede;
+  z-index: 100;
 }
 
 .l-header-logo__link {

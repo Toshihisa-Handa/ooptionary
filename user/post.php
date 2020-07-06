@@ -19,8 +19,8 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
 <?php echo $_SESSION["name"];
 $name= $_SESSION["name"]; 
 ?>
-
-<h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル</h5>
+<div class="container">
+  <h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル</h5>
     <form method="POST" action="post_act.php">
         <input type="hidden" name="name" value="<?php echo $name?>">
         <input class="form-control form-control-lg" id="editor" type="text" name="title" placeholder="タイトルを入力">
@@ -41,7 +41,7 @@ $name= $_SESSION["name"];
 
         <input type="submit" value="送信">
     </form>
-
+    </div>
 
 
 

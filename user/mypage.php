@@ -63,7 +63,7 @@ if ($status==false) {
     <!-- 左側のエリア -->
     <div class="left-ara">
       <!-- マイページヘッダー -->
-    
+    <a href="logout.php">ログアウト</a>
          <p>test</p> 
          <p>test</p> 
          <p>test</p> 
