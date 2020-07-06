@@ -39,23 +39,7 @@ if($status==false){
 
 }else{
 
-  $val = $stmt->fetch();         //1レコードだけ取得する方法
-//$count = $stmt->fetchColumn(); //SELECT COUNT(*)で使用可能()
-
-//5. 該当レコードがあればSESSIONに値を代入
-//if(password_verify($lpw, $val["lpw"])){ //* PasswordがHash化の場合はこっちのIFを使う
-if ($val["id"] != "") {
-    //Login成功時
-    $_SESSION["chk_ssid"]  = session_id(); //この認証が通ったときのKEYを渡しておく
-    $_SESSION["kanri_flg"] = $val['kanri_flg'];
-    $_SESSION["name"]      = $val['name'];
-  
-  redirect("list.php");
-}else{
-   //Login失敗時(Logout経由)
-   redirect("error.php");
-
-}
+  redirect("login.php");
 
 
 

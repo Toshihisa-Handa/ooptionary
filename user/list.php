@@ -3,16 +3,15 @@ session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
 // sschk();
 
-// $name = $_SESSION["name"];
+$name = $_SESSION["name"];
 //1. DB接続します
 $pdo = db_conn();
-// $id = $_SESSION["chk_ssid"];
 
 
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
 $stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name=:name');
-$stmt->bindValue(':name', $_SESSION["name"], PDO::PARAM_INT);
+$stmt->bindValue(':name',$name, PDO::PARAM_STR);
 $status = $stmt->execute();
 
 
@@ -37,12 +36,14 @@ if ($status==false) {
         <div class="card-text list_text content">';
         $view.= nl2br($r['naiyou']).'</div>
       <a href="#" class="btn btn-primary">詳細を見る</a>
-      <i class="fas fa-trash-alt"></i>
-      <i class="fas fa-redo-alt"></i>
+      <a href="delete.php" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>
       </div>
       </div>';
     }
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -55,9 +56,12 @@ if ($status==false) {
   <link rel="stylesheet" href="../css/list.css">
 </head>
 <body>
+
   <?php include('l-header.php') ?>
   <div class="container">
-    <?=$view?>
+  <?php echo $_SESSION["name"];
+ ?>
+    <?=$view?> <div class="content">aa</div>
   </div><!-- 末尾の閉じタグ -->
   <?php @include('l-footer.php') ?>
   <script src="js/marked.js"></script>
@@ -68,6 +72,9 @@ if ($status==false) {
   <script>
     document.querySelectorAll('.content').innerHTML =
       marked('<?=$r["naiyou"]?>');
+
+   
+
   </script>
 </body>
 </html>
