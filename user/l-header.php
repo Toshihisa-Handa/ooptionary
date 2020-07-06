@@ -12,3 +12,4 @@
     <div class="item-center l-header-login"><a href="login.php" class="l-header-login__btn">ログイン<i class="fas fa-caret-right l-header-login__arrow"></i></a></div>
   </div>
 </header>
+<div class="main">

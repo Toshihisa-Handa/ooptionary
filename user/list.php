@@ -18,6 +18,6 @@
 <p>これはリストです</p>
 <p>これはリストです</p>
 
-
+<?php @include('l-footer.php') ?>
 </body>
 </html>

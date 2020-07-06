@@ -33,6 +33,6 @@ $name= $_SESSION["name"];
   </div>
 </form>
 
-
+<?php @include('l-footer.php') ?>
 </body>
 </html>

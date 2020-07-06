@@ -244,5 +244,7 @@ if ($status==false) {
     </div>
     <!-- 右側のエリアここまで -->
   </div>
+
+  <?php @include('l-footer.php') ?>
 </body>
 </html>
