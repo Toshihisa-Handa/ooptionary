@@ -6,13 +6,13 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
 // $name = $_SESSION["name"];
 //1. DB接続します
 $pdo = db_conn();
-// $id = $_SESSION["chk_ssid"];
-
+$id = $_SESSION["chk_ssid"];
+$name = $_SESSION["name"];
 
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
-$stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name="のり"');
-// $stmt->bindValue(':name',$_SESSION["name"], PDO::PARAM_INT);
+$stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name=:id');
+$stmt->bindValue(':id',$id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
 
@@ -63,143 +63,38 @@ if ($status==false) {
     <!-- 左側のエリア -->
     <div class="left-ara">
       <!-- マイページヘッダー -->
-      <div class="profiele">
-        <div class="left-container">
-          <div class="profiele-area">
-            <div class="profiele-box">
-              <i class="fas fa-user-circle"></i>
-              <p>You Name</p>
-            </div>
-            <div class="nav-box">
-              <div class="your-post">
-                <div class="post-total">100</div>
-                <p>総投稿数</p>
-              </div>
-              <div class="your-follow">
-                <div class="follow-total">50</div>
-                <p>フォロー数</p>
-              </div>
-              <div class="your-follower">
-                <div class="follower-total">10</div>
-                <p>フォロワー数</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 投稿エリア -->
-
-      <div class="push-log">
-        <div class="left-container">
-          <!-- 記事の投稿ここから -->
-          <div class="push-log-area">
-            <div class="log-title">
-              <p><i class="fas fa-user-circle"></i>&nbsp;&nbsp;You Name</p>
-              <p>ここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入る</p>
-
-              <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-thumbs-up"></i>
-                <i class="fas fa-upload"></i>
-              </div>
-            </div>
-            <div class="log-img">
-            </div>
-            
-                   
-                    <h3>投稿一覧</h3>
-                        <a href="list.php">登録へ戻る</a>
-                        <p><a href="logout_act.php">ログアウト</a></p>
-
-                        <p><?=$view?></p>
+    
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
+         <p>test</p> 
 
 
-                  <!-- 記事の投稿ここまで -->
-          </div>
-          <div class="push-log-area">
-            <div class="log-title">
-              <p><i class="fas fa-user-circle"></i>&nbsp;&nbsp;You Name</p>
-              <p>ここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入る</p>
-
-              <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-thumbs-up"></i>
-                <i class="fas fa-upload"></i>
-              </div>
-            </div>
-            <div class="log-img">
-            </div>
-          </div>
-          <div class="push-log-area">
-            <div class="log-title">
-              <p><i class="fas fa-user-circle"></i>&nbsp;&nbsp;You Name</p>
-              <p>ここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入る</p>
-
-              <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-thumbs-up"></i>
-                <i class="fas fa-upload"></i>
-              </div>
-            </div>
-            <div class="log-img">
-            </div>
-          </div>
-          <div class="push-log-area">
-            <div class="log-title">
-              <p><i class="fas fa-user-circle"></i>&nbsp;&nbsp;You Name</p>
-              <p>ここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入る</p>
-
-              <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-thumbs-up"></i>
-                <i class="fas fa-upload"></i>
-              </div>
-            </div>
-            <div class="log-img">
-            </div>
-          </div>
-          <div class="push-log-area">
-            <div class="log-title">
-              <p><i class="fas fa-user-circle"></i>&nbsp;&nbsp;You Name</p>
-              <p>ここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入る</p>
-
-              <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-thumbs-up"></i>
-                <i class="fas fa-upload"></i>
-              </div>
-            </div>
-            <div class="log-img">
-            </div>
-          </div>
-          <div class="push-log-area">
-            <div class="log-title">
-              <p><i class="fas fa-user-circle"></i>&nbsp;&nbsp;You Name</p>
-              <p>ここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入るここに投稿記事が入る</p>
-
-              <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-thumbs-up"></i>
-                <i class="fas fa-upload"></i>
-              </div>
-            </div>
-            <div class="log-img">
-            </div>
-          </div>
-          <h3>投稿一覧</h3>
-          <a href="list.php">登録へ戻る</a>
-          <p><a href="logout_act.php">ログアウト</a></p>
-
-          <p><?=$view?>
-          </p>
-
-
-          <!-- 記事の投稿ここまで -->
-        </div>
-      </div>
-
-      </div>
     </div>
 
 
