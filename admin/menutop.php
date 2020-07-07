@@ -12,7 +12,6 @@ sschk();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/menutop.css">
 
 
 <!-- Bootstrap -->
@@ -21,11 +20,32 @@ sschk();
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 <body>
-  <p>管理者TOP画面</p>
-  <a href="viewall.php">投稿一覧画面へ</a>
-  <a href="../user/login.php">ログイン画面へ</a>
-  <a href="../user/logout_act.php">ログアウト</a>
-
+<header class="navbar-dark bg-dark">
+<div class="container">
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="menutop.php">管理者</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item ">
+<a class="nav-link" href="viewall.php">削除機能</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="life_edit.php">退会機能</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../user/login.php">ログイン画面</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../user/logout.php">ログアウト</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
   <div class="jumbotron">
 
 <div class="container">

@@ -41,10 +41,7 @@ if ($status==false) {
       $view.='</div></div>';
     }
 }
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,16 +50,37 @@ if ($status==false) {
   <title>Document</title>
   <link rel="stylesheet" href="../css/list.css">
   <?php include('l-header-css.php') ?>
+  <style>
+    .trash_btn{
+      background-color:red;
+      border:none;
+    }
+    .trash_btn:hover{
+      background-color:red;
+      border:none;
+      opacity:0.7
+    }
+
+    .update_btn{
+      background-color:rgb(26, 165, 56);
+      border:none;
+    }
+    .update_btn:hover{
+      background-color:rgb(26, 165, 56);
+      border:none;
+      opacity:0.7
+    }
+
+
+  </style>
 </head>
 <body>
-
-
   <?php include('l-header.php') ?>
   <div class="container">
- 
     <?=$view?>
   </div><!-- 末尾の閉じタグ -->
   <?php @include('l-footer.php') ?>
+
 
 
 
