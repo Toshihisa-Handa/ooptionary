@@ -13,11 +13,15 @@ $userData = getUserData($_GET);
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PHPの検索機能</title>
-<link rel="stylesheet" href="style.css">
+<?php include('l-header-css.php') ?>
 <!-- Bootstrap読み込み（スタイリングのため） -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<!-- <link rel="stylesheet" href="../css/list.css"> -->
 </head>
 <body>
+  <?php include('l-header.php') ?>
+
 <h1 class="col-xs-6 col-xs-offset-3">検索フォーム</h1>
 <div class="col-xs-6 col-xs-offset-3 well">
 

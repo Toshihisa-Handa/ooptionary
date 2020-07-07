@@ -51,8 +51,8 @@ if ($status==false) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <?php include('l-header-css.php') ?>
   <link rel="stylesheet" href="../css/list.css">
+  <?php include('l-header-css.php') ?>
 </head>
 <body>
 
