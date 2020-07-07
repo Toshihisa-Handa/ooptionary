@@ -9,12 +9,12 @@ overflow: hidden;
 }
 
 
-.list_detaile{
+.list_detail{
   font-weight: bold;
   color:rgb(24, 24, 39);
-  border-bottom: 1px solid cornflowerblue;
+  border-bottom: 1px solid rgb(77, 84, 95);
 }
-.list_detaile:hover{
+.list_detail:hover{
   border-bottom: rgb(207, 167, 56);
 }
 
