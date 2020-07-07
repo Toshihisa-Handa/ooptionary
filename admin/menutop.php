@@ -18,6 +18,11 @@ sschk();
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!-- font awsome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+<style>
+  .admin-btn{
+    padding:5px 20px 5px 20px;
+  }
+</style>
 </head>
 <body>
 <header class="navbar-dark bg-dark">
@@ -55,19 +60,19 @@ sschk();
   <p>管理機能一覧</p>
 
   <div class="d-flex card-box">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 24rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
         <h5 class="card-title">強制記事  削除機能 </h5>
         <p class="card-text">管理者権限にて投稿記事を強制削除します。</p>
-        <a href="viewall.php" class="btn btn-primary">Go somewhere</a>
+        <a href="viewall.php" class="btn btn-primary"><i class="fas admin-btn fa-arrow-alt-circle-right"></i></a>
       </div>
-    </div><div class="card" style="width: 18rem;">
+    </div><div class="card" style="width:24;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
         <h5 class="card-title">強制退会機能</h5>
         <p class="card-text">管理者権限にて特定ユーザへのサービス提供を停止状態（退会扱い）とします。</p>
-        <a href="life_edit.php" class="btn btn-primary">Go somewhere</a>
+        <a href="life_edit.php" class="btn btn-primary"><i class="fas admin-btn fa-arrow-alt-circle-right"></i></a>
       </div>
     </div>
     <!-- <div class="card" style="width: 18rem;"> -->
