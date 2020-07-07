@@ -33,14 +33,11 @@ if ($status==false) {
         $view.= $r['name'].'</div></h5>
         <div class="card-body">
         <h5 class="card-title">';
+        // ここから変更した7/7 15時
         $view.='<a href="detail.php? id='.$r["id"].'" class="list_detail">'.$r['title'].'</a></h5>';
-        // $view.='<div class="card-text list_text content">';
-        // $view.= nl2br($r['naiyou']).'</div>';
-
-      // $view.='<a href="#" class="btn btn-primary list_btn toggle_btn">続きを開く</a>';
       $view.= '<a href="delete.php? id='.$r["id"].'" class="btn btn-primary list_btn trash_btn"><i class="fas fa-trash-alt"></i></a>';
       $view .='<a href="post_detail.php? id='.$r["id"].'" class="btn btn-primary list_btn update_btn"><i class="fas fa-redo-alt"></i></a>';
-     
+    //  ここまで変更
       $view.='</div></div>';
     }
 }
