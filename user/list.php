@@ -36,7 +36,7 @@ if ($status==false) {
         // ここから変更した7/7 15時
         $view.='<a href="detail.php? id='.$r["id"].'" class="list_detail">'.$r['title'].'</a></h5>';
       $view.= '<a href="delete.php? id='.$r["id"].'" class="btn btn-primary list_btn trash_btn"><i class="fas fa-trash-alt"></i></a>';
-      $view .='<a href="post_detail.php? id='.$r["id"].'" class="btn btn-primary list_btn update_btn"><i class="fas fa-redo-alt"></i></a>';
+      $view .='<a href="post_update.php? id='.$r["id"].'" class="btn btn-primary list_btn update_btn"><i class="fas fa-redo-alt"></i></a>';
     //  ここまで変更
       $view.='</div></div>';
     }
@@ -59,8 +59,7 @@ if ($status==false) {
 
   <?php include('l-header.php') ?>
   <div class="container">
-  <?php echo $_SESSION["name"];
- ?>
+ 
     <?=$view?>
   </div><!-- 末尾の閉じタグ -->
   <?php @include('l-footer.php') ?>

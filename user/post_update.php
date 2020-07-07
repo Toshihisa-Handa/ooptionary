@@ -38,43 +38,50 @@ $row = $stmt->fetch();
 //以下のhtmlタグ内の記述は見た目のレイアウトを合わせると良いため、基本index2.phpをコピペする。
 ?>
 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>投稿更新</title>
-
+  <?php include('l-header-css.php') ?>
+  <link rel="stylesheet" href="../css/list.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
 </head>
 <body>
-
-<!-- Head[Start] -->
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-    <div class="navbar-header"><a class="navbar-brand" href="viewall.php">投稿更新</a></div>
-    </div>
-  </nav>
-</header>
-<!-- Head[End] -->
-<p><a href="../user/logout_act.php">ログアウト</a></p>
-
-<!-- Main[Start] -->
-<form method="post" action="update_act.php">
-  <div class="jumbotron">
-   <fieldset>
-    <legend>Your Ooops</legend>
-     <label>名前：<input type="text" name="name" value="<?=$row["name"]?>"></label><br>
-     <label>titel<input type="text" name="title" value="<?=$row["title"]?>"></label><br>
-     <p>内容</p>
-     <label><textArea name="naiyou" rows="4" cols="40"><?=$row["naiyou"]?></textArea></label><br>
-     <input type="hidden" name='id' value="<?=$row["id"]?>">
-     <input type="submit" value="送信">
-    </fieldset>
+  <?php include('l-header.php') ?>
+  <div class="container">
+    <form method="post" action="post_update_act.php">
+      <input type="hidden" name="id" value="<?=$row["id"]?>">
+      <input type="hidden" name="name" value="<?=$row["name"]?>">
+      <h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル（編集中）</h5>
+      <input type="text" name="title" value="<?=$row["title"]?>" class="form-control">
+      <h5 class="w-30 p-1 border solid rounded mt-2" style="background-color: #FFFFEE;">◆記事本文（編集中）</h5>
+      <textarea id="editor" name="naiyou" rows="8" cols="40"><?=$row["naiyou"]?></textarea>
+      <div class="text-center"><input type="submit" value="送信" class="btn btn-primary btn-lg"></div>
+    </form>
   </div>
-</form>
-<!-- Main[End] -->
-
-
+  <?php @include('l-footer.php') ?>
+  <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+  <script>
+    var simplemde = new SimpleMDE({
+      element: document.getElementById("editor"),
+      forceSync: true
+    });
+  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
