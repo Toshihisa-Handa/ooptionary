@@ -32,13 +32,13 @@ if ($status==false) {
         $view.= $r['name'].'</div></h5>
         <div class="card-body">
         <h5 class="card-title">';
-        $view.=$r['title'].'</h5>
-        <div class="card-text list_text content">';
-        $view.= nl2br($r['naiyou']).'</div>';
+        $view.=$r['title'].'</h5>';
+        // <div class="card-text list_text content">';
+        // $view.= nl2br($r['naiyou']).'</div>';
 
       $view.='<a href="#" class="btn btn-primary">詳細を見る</a>';
-      $view.='<a href="delete.php" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>';
-      // $view.= '<a href="delete.php? id='.$r["id"].'"></a>';
+      // $view.='<a href="delete.php" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>';
+      $view.= '<a href="delete.php? id='.$r["id"].'" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>';
       // $view.= '<a href="#" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>';
       $view .='<a href="detail2.php? id='.$r["id"].'" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>';
       $view.='</div></div>';
@@ -66,12 +66,8 @@ if ($status==false) {
     <?=$view?>
   </div><!-- 末尾の閉じタグ -->
   <?php @include('l-footer.php') ?>
-  <script src="js/marked.js"></script>
 
 
-<script>
-    document.querySelectorAll('.content').innerHTML =
-      marked('<?=$r["naiyou"]?>');
-</script>
+
 </body>
 </html>
