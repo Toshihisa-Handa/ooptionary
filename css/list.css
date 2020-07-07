@@ -1,0 +1,9 @@
+.list_card{
+  margin:0 0 30px ;
+}
+.list_text{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden; 
+}

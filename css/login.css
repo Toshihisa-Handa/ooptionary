@@ -153,9 +153,11 @@ li {
   top: 0;
   height: 50px;
   position: fixed;
+  top:0;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #dedede;
+  z-index: 100;
 }
 
 .l-header-logo__link {
@@ -182,7 +184,11 @@ li {
 }
 
 .l-header-list__link:hover {
-  background-color: rgba(0, 1, 2, 0.04);
+  background-color: rgb(240, 248, 255,1);
+}
+
+.l-header-list__link.is-current{
+  border-bottom: 2px solid #1e90ff;
 }
 
 .l-header-login__btn {

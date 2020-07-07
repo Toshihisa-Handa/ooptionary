@@ -38,7 +38,11 @@ if($status==false){
   sql_error();
 
 }else{
-  redirect("list.php");
+
+  redirect("login.php");
+
+
+
 }
 
 ?>

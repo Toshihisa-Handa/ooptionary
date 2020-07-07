@@ -31,7 +31,7 @@ if($status==false){
                              // SQLEErrorの部分はエラー時出てくる文なのでなんでもOK
 }else{
   //５．index.phpへリダイレクト(エラーがなければindex.phpt)
-  header('Location: post.php');//Location:の後ろの半角スペースは必ず入れる。
+  header('Location: list.php');//Location:の後ろの半角スペースは必ず入れる。
   exit();
 
 }
