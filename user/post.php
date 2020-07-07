@@ -23,8 +23,6 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
 <body>
   <?php include('l-header.php') ?>
   <div class="container">
-    <?php echo $_SESSION["name"];
-    $name= $_SESSION["name"];?>
     <form method="POST" action="post_act.php" class="post-form">
       <h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル</h5>
       <input type="hidden" name="name" value="<?php echo $name?>">
