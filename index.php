@@ -71,10 +71,8 @@
                         <div class="intro-list__icon"><i class="fas fa-heart"></i></div>
                         <div class="intro-list__body">
                             <h3 class="intro-list__title">エラーに<br>いいねしよう❤︎</h3>
-                            <p class="intro-list__text">誰かのエラーに共感できたら、いいねしてみましょう。<br>
-                                いいねってテンション上がってポジティブになりますよね。<br>
-                                世の中に答えが溢れ、エラーって私だけかも、なんで私だけわからないんだろうと塞ぎ込みがちの世の中かもしれません。<br>
-                                あなたのいいねで、世の中をもっと「ごきげん」にしましょう。</p>
+                            <p class="intro-list__text">誰かのエラーに共感できたら、いいねしてみましょう。
+                                いいねってテンション上がってポジティブになりますよね。あなたのいいねで、世の中をもっと「ごきげん」にしましょう。</p>
                         </div>
                     </li>
                 </ul>
@@ -93,19 +91,22 @@
                         <div class="use-list__img"></div>
                         <div class="use-list__body">
                             <p class="use-list__num">01</p>
-                            <h3 class="use-list__title">トップページから解決策を探す</h3>
+                            <h3 class="use-list__title">エラーと解決策を探す</h3>
                             <div class="use-list__text">トップページの検索窓から、あなたの解決策を検索できます。<br>
                                 あなたのエラーが解決できたら、いいねを押してね❤︎<br>
                                 ログイン・登録は必要なく、誰でも調べることができます。</div>
                         </div>
                     </li>
                     <li class="use-list__item">
-                        <div class="use-list__img"></div>
                         <div class="use-list__body">
                             <p class="use-list__num">02</p>
-                            <h3 class="use-list__title">マイページからエラーを投稿する</h3>
-                            <div class="use-list__text">マイページからあなたのエラーを投稿できます。</div>
+                            <h3 class="use-list__title">エラーを投稿する</h3>
+                            <div class="use-list__text">マイページからあなたのエラーを投稿できます。<br>
+                            あなたがエラーを綴れば、誰かのエラーが救われます。<br>
+                            そんな素敵なサイクル、一緒に創りましょ❤︎
                         </div>
+                        </div>
+                        <div class="use-list__img"></div>
                     </li>
                     <li class="use-list__item">
                         <div class="use-list__img"></div>
