@@ -39,14 +39,14 @@ sschk();
       <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
         <h5 class="card-title">強制記事  削除機能 </h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">管理者権限にて投稿記事を強制削除します。</p>
         <a href="viewall.php" class="btn btn-primary">Go somewhere</a>
       </div>
     </div><div class="card" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
         <h5 class="card-title">強制退会機能</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">管理者権限にて特定ユーザへのサービス提供を停止状態（退会扱い）とします。</p>
         <a href="life_edit.php" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
@@ -54,7 +54,7 @@ sschk();
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <!-- <div class="card-body">
         <h5 class="card-title">警告機能</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">不適切なサービス利用が見受けられる特定ユーザへ警告します。</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div> -->
