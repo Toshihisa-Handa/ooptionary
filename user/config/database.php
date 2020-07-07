@@ -3,6 +3,6 @@
 //DBの接続情報
 $host = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "team";
 
