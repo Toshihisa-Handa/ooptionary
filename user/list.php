@@ -32,15 +32,16 @@ if ($status==false) {
         $view.= $r['name'].'</div></h5>
         <div class="card-body">
         <h5 class="card-title">';
-        $view.=$r['title'].'</h5>';
-        // <div class="card-text list_text content">';
-        // $view.= nl2br($r['naiyou']).'</div>';
+        $view.='<a href="detail.php? id='.$r["id"].'" class="list_detaile">'.$r['title'].'</a></h5>';
+        $view.='<div class="card-text list_text content">';
+        $view.= nl2br($r['naiyou']).'</div>';
 
-      $view.='<a href="#" class="btn btn-primary">詳細を見る</a>';
-      // $view.='<a href="delete.php" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>';
-      $view.= '<a href="delete.php? id='.$r["id"].'" class="btn btn-primary"><i class="fas fa-trash-alt"></i></a>';
-      // $view.= '<a href="#" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>';
-      $view .='<a href="detail2.php? id='.$r["id"].'" class="btn btn-primary"><i class="fas fa-redo-alt"></i></a>';
+      $view.='<a href="#" class="btn btn-primary list_btn toggle_btn">続きを開く</a>';
+      // $view.='<a href="detail2.php" class="btn btn-primary list_btn detail_btn">詳細を見る</a>';
+      // $view .='<a href="detail.php? id='.$r["id"].'" class="btn btn-primary list_btn detail_btn">'.$r['title'].'</a>';
+      $view.= '<a href="delete.php? id='.$r["id"].'" class="btn btn-primary list_btn trash_btn"><i class="fas fa-trash-alt"></i></a>';
+      $view .='<a href="post_detail.php? id='.$r["id"].'" class="btn btn-primary list_btn update_btn"><i class="fas fa-redo-alt"></i></a>';
+     
       $view.='</div></div>';
     }
 }

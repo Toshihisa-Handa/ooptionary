@@ -425,7 +425,7 @@ Content
 }
 
 .use-list__item:nth-child(1) .use-list__img {
-  background: url(../img/use_img01.jpg) no-repeat center;
+  background: url() no-repeat center;
   background-size: cover;
 }
 

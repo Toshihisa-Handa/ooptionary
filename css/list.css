@@ -7,3 +7,46 @@
 -webkit-line-clamp: 2;
 overflow: hidden; 
 }
+
+
+.list_detaile{
+  font-weight: bold;
+  color:rgb(24, 24, 39);
+  border-bottom: 1px solid cornflowerblue;
+}
+.list_detaile:hover{
+  border-bottom: rgb(207, 167, 56);
+}
+
+.list_btn{
+  margin:0 10px 0 0;
+}
+
+.toggle_btn{
+  background-color: rgb(209, 220, 223);
+  border:none;
+  color:black;
+}
+.toggle_btn:hover{
+  background-color: rgba(209, 220, 223,0.7);
+  color:black;
+}
+.trash_btn{
+  background-color: red;
+  border: 1px solid red;
+}
+.trash_btn:hover{
+  background-color: red;
+  border: 1px solid red;
+  opacity: 0.7;
+}
+
+.update_btn{
+  background-color: rgb(98, 189, 98);
+  border: 1px solid rgb(98, 189, 98);
+}
+.update_btn:hover{
+  background-color: rgb(98, 189, 98);
+  border: 1px solid rgb(98, 189, 98);
+  opacity: 0.7;
+}
