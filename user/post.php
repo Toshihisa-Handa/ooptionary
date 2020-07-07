@@ -2,7 +2,7 @@
 session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
 // sschk();
-
+$name =$_SESSION["name"];
 ?>
 
 
@@ -25,7 +25,7 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
   <div class="container">
     <form method="POST" action="post_act.php" class="post-form">
       <h5 class="w-30 p-1" style="background-color: #CCFFCC;">◆タイトル</h5>
-      <input type="hidden" name="name" value="<?php echo $name?>">
+      <input type="hidden" name="name" value="<?=$name?>">
       <input class="form-control form-control-lg" id="editor" type="text" name="title" placeholder="タイトルを入力">
       <h5 class="w-30 p-1 border solid rounded mt-2" style="background-color: #FFFFEE;">◆記事本文</h5>
       <textarea id="editor2" name="naiyou" rows="8" cols="40"></textarea>

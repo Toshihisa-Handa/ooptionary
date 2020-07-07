@@ -19,7 +19,7 @@
                     <li class="gnav__item"><a href="#link1" class="gnav__link">特徴</a></li>
                     <li class="gnav__item"><a href="#link2" class="gnav__link">使い方</a></li>
                     <li class="gnav__item"><a href="user/login.php" class="gnav__link">ログイン</a></li>
-                    <li class="gnav__item"><a href="user/list.php" class="gnav__btn">投稿を見る<i class="fas fa-caret-right btn__arrow"></i></a></li>
+                    <li class="gnav__item"><a href="user/top_list.php" class="gnav__btn">投稿を見る<i class="fas fa-caret-right btn__arrow"></i></a></li>
                 </ul>
             </nav>
         </div>
