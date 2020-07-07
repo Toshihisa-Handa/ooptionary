@@ -8,6 +8,7 @@ $name = $_SESSION["name"];
 $pdo = db_conn();
 
 
+
 //2．データ登録SQL作成
 //prepare("")の中にはmysqlのSQLで入力したINSERT文を入れて修正すれば良いイメージ
 $stmt = $pdo->prepare('SELECT * FROM user_oops_table WHERE name=:name ORDER BY id DESC');
@@ -36,7 +37,7 @@ if ($status==false) {
         // $view.='<div class="card-text list_text content">';
         // $view.= nl2br($r['naiyou']).'</div>';
 
-      $view.='<a href="#" class="btn btn-primary list_btn toggle_btn">続きを開く</a>';
+      // $view.='<a href="#" class="btn btn-primary list_btn toggle_btn">続きを開く</a>';
       $view.= '<a href="delete.php? id='.$r["id"].'" class="btn btn-primary list_btn trash_btn"><i class="fas fa-trash-alt"></i></a>';
       $view .='<a href="post_detail.php? id='.$r["id"].'" class="btn btn-primary list_btn update_btn"><i class="fas fa-redo-alt"></i></a>';
      
