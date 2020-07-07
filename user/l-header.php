@@ -1,6 +1,6 @@
 <header class="l-header">
   <div class="l-inner d-flex">
-    <div class="l-header-logo"><a href="list.php" class="l-header-logo__link item-center">うぷしょなりー</a></div>
+    <div class="l-header-logo"><a href="../index.php" class="l-header-logo__link item-center">うぷしょなりー</a></div>
     <ul class="l-header-list flex--auto">
       <li class="l-header-list__item">
         <?php $url = $_SERVER['REQUEST_URI'];

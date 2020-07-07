@@ -31,8 +31,7 @@ include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/f
       <input class="form-control form-control-lg" id="editor" type="text" name="title" placeholder="タイトルを入力">
       <h5 class="w-30 p-1 border solid rounded mt-2" style="background-color: #FFFFEE;">◆記事本文</h5>
       <textarea id="editor2" name="naiyou" rows="8" cols="40"></textarea>
-      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-      <input type="submit" value="送信" class="btn btn-primary">
+      <div class="text-center"><input type="submit" value="送信" class="btn btn-primary btn-lg"></div>
     </form>
   </div>
   <?php @include('l-footer.php') ?>

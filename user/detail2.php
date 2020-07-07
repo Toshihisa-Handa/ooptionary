@@ -1,5 +1,4 @@
-
-<?php  
+<?php
 session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
 // sschk();
@@ -25,34 +24,38 @@ $status = $stmt->execute();
 
 //4．データ登録処理後（elseより手前はselect2.phpと同じ）
 $view='';
-if($status==false){
-  //SQL実行時にエラーがある場合（エラーオブジェクト取得して表示）
-  $error = $stmt->errorInfo();
-  exit("SQLError:".$error[2]);//エラーが起きたらエラーの2番目の配列から取ります。ここは考えず、これを使えばOK
+if ($status==false) {
+    //SQL実行時にエラーがある場合（エラーオブジェクト取得して表示）
+    $error = $stmt->errorInfo();
+    exit("SQLError:".$error[2]);//エラーが起きたらエラーの2番目の配列から取ります。ここは考えず、これを使えばOK
                              // SQLEErrorの部分はエラー時出てくる文なのでなんでもOK
-}else{//ここより下は修正している↓
+} else {//ここより下は修正している↓
  //1データのみ抽出の為,select2.phpであったwhile文を削除。ここで$rowを定義
 $r = $stmt->fetch();
-}
-?>
+}?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
-  <title>Marked in the browser</title>
-  <script src="js/marked.js"></script>
-
+  <meta charset="utf-8" />
+  <title>詳細ページ</title>
+  <?php include('l-header-css.php'); ?>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
 </head>
 <body>
-<div class="media-body">
-          <h5 class="w-50 p-3" style="background-color: #CCFFCC;"><?=$r["title"]?></h5>
-          <div id="content"></div>
-          <!-- タイトルはこの辺りに入れる -->
-          <script>
-          document.getElementById('content').innerHTML =
-          marked("<?=$r["naiyou"]?>");
-          </script>
-        </div>
+  <?php include('l-header.php'); ?>
+  <div class="container">
+    <div id="content" class="detail">
+      <h5 class="p-3 mb-5 detail__title" style="background-color: #CCFFCC;"><?php echo $r["title"]; ?>
+      </h5>
+      <div class="detail__text" id="mdraw"><?php echo nl2br($r["naiyou"]); ?>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      document.getElementById("content").innerHTML =
+        marked(document.getElementById("mdraw").innerHTML);
+    </script>
+  </div>
 </body>
 </html>
