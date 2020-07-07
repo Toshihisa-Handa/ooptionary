@@ -7,8 +7,6 @@ sschk();
 //DB接続
 $pdo = db_conn();
 
-
-
 //データ登録SQL作成
 $stmt = $pdo->prepare("SELECT* FROM user");
 $status = $stmt->execute();
@@ -29,10 +27,10 @@ if($status==false){
   $view .='<p>';
   $view .="《ユーザ名》".$tmp["name"]."<br>《登録アドレス》".$tmp["email"]."<br>《ユーザ登録日時》".$tmp["indate"].'<br>《管理者権限（0->有, 1->無）》'.$tmp["kanli_flg"]."<br>《サービス提供（0->有、1->停止）》".$tmp["life_flg"];
 
-//update.phpへのリンク
+//life_change.phpへのリンク
   $view .='  ';
   $view .='<a href="life_change.php? id='.$tmp["id"].'">';
-  $view .='[変更]';
+  $view .='[強制退会]';
   $view .='</a>';
 
  }
