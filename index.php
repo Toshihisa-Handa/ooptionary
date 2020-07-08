@@ -33,7 +33,7 @@
                         <div class="mv-copy__text">人には、聞けない。ググってもでない。<br>
                             答えではなく、エラーから探すをコンセプトに、<br>
                             誰もが経験する、プログラミング初学者にありがちな、<br>エラーの事象と解決策を探すことができます。</div>
-                        <a href="user/list.php" class="btn">投稿を見る<i class="fas fa-caret-right btn__arrow"></i></a>
+                        <a href="user/top_list.php" class="btn">投稿を見る<i class="fas fa-caret-right btn__arrow"></i></a>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
             <div class="cta-content">
                 <h2 class="cta-content__title">Let’s Ooops!</h2>
                 <p class="cta-content__text">さー、あなたのエラーと解決策を探してみよう。</p>
-                <a class="cta-content__btn" href="user/list.php">投稿を見る<i class="fas fa-caret-right btn__arrow"></i></a>
+                <a class="cta-content__btn" href="user/top_list.php">投稿を見る<i class="fas fa-caret-right btn__arrow"></i></a>
             </div>
         </section>
     </main>

@@ -1,6 +1,8 @@
 <?php 
 //検索ページ作成
-
+session_start();
+include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
+sschk();
 //①データ取得ロジックを呼び出す
 include_once('search_model2.php');
 

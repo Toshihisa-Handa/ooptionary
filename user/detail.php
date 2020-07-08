@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('funcs.php');//別の階層にfuncs.phpがある場合は「betukaisou/funcs.php」などパスを変えてincludesする
-// sschk();
+sschk();
 
 
 //1.GETでidを取得
